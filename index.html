@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UL CGT Annonay — Union Locale CGT du bassin annonéen</title>
+  <meta name="description" content="Union Locale CGT d'Annonay : permanences juridiques, défense des salarié·es, actus des luttes et adhésion en ligne. Ensemble, on est plus forts." />
+  <meta name="theme-color" content="#d20012" />
+  <meta property="og:title" content="UL CGT Annonay" />
+  <meta property="og:description" content="Ensemble, on est plus forts. Permanences, droits, luttes et adhésion." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Préloader -->
+  <div class="loader" aria-hidden="true">
+    <img class="loader__mark" src="logo-cgt.png" alt="" />
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="Accueil UL CGT Annonay">
+      <img class="nav__img" src="logo-cgt.png" alt="La CGT" width="40" height="53" />
+      <span class="nav__name">Union Locale<br /><b>Annonay</b></span>
+    </a>
+    <nav class="nav__links" id="menu" aria-label="Navigation principale">
+      <a href="#ul">L'UL</a>
+      <a href="#luttes">Nos luttes</a>
+      <a href="#actus">Actus</a>
+      <a href="#photos">Photos</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#droits">Tes droits</a>
+      <a href="#contact">Contact</a>
+      <a href="#adherer" class="btn btn--small magnetic">Adhérer</a>
+    </nav>
+    <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="hero-gl" aria-hidden="true"></canvas>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow reveal">Union Locale CGT · Bassin d'Annonay · Ardèche</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="split">Ensemble</span></span>
+          <span class="line"><span class="split">pour nos</span></span>
+          <span class="line line--red"><span class="scramble" data-words="salaires|emplois|retraites|services publics|conditions de travail|droits">salaires</span></span>
+        </h1>
+        <p class="hero__lead reveal">Seul·e face à ton patron, tu pèses peu. À plusieurs, on change la donne. L'UL CGT Annonay défend, conseille et organise les salarié·es, privé comme public, du bassin annonéen.</p>
+        <div class="hero__cta reveal">
+          <a href="#adherer" class="btn magnetic"><span>Je me syndique</span><i>→</i></a>
+          <a href="#droits" class="btn btn--ghost magnetic"><span>J'ai un problème au travail</span></a>
+        </div>
+      </div>
+      <a href="#ul" class="hero__scroll" aria-label="Défiler vers le contenu"><span></span></a>
+    </section>
+
+    <!-- BANDEAU DÉFILANT -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Augmentation des salaires</span><b>✊</b>
+        <span>Retraite à 60 ans</span><b>✊</b>
+        <span>Égalité femmes-hommes</span><b>✊</b>
+        <span>Défense des services publics</span><b>✊</b>
+        <span>Semaine de 32 heures</span><b>✊</b>
+        <span>Santé au travail</span><b>✊</b>
+      </div>
+    </div>
+
+    <!-- L'UL -->
+    <section class="section" id="ul">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow reveal">Qui sommes-nous</p>
+          <h2 class="title reveal">Le syndicat<br /><em>de proximité</em>.</h2>
+        </div>
+        <div class="reveal">
+          <p class="big words">L'Union Locale rassemble tous les syndicats CGT du bassin d'Annonay. Industrie, santé, commerce, collectivités, transport, retraité·es : on est là pour toutes et tous.</p>
+          <p>Ta boîte n'a pas de syndicat ? Tu es dans une TPE, en intérim, au chômage ? C'est justement pour ça que l'UL existe. On t'accueille, on t'écoute et on agit avec toi.</p>
+        </div>
+      </div>
+
+      <div class="container stats">
+        <div class="stat reveal"><b data-count="1895">0</b><span>Naissance de la CGT</span></div>
+        <div class="stat reveal"><b data-count="40" data-suffix="+">0</b><span>Syndicats & sections</span></div>
+        <div class="stat reveal"><b data-count="52">0</b><span>Permanences / an</span></div>
+        <div class="stat reveal"><b data-count="100" data-suffix="%">0</b><span>Indépendant du patronat</span></div>
+      </div>
+
+      <div class="container">
+        <div class="sg reveal">
+          <!-- Photo : dépose photos/raphael-fois.jpg pour remplacer les initiales -->
+          <div class="sg__photo" data-src="photos/raphael-fois.jpg"><span>RF</span></div>
+          <div>
+            <span class="sg__role">Secrétaire général</span>
+            <h3 class="sg__name">Raphaël Foïs</h3>
+            <p>Il anime l'Union Locale et coordonne l'action des syndicats CGT du bassin d'Annonay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LUTTES -->
+    <section class="section section--red" id="luttes">
+      <div class="pin">
+      <div class="container">
+        <p class="eyebrow reveal">Nos combats</p>
+        <h2 class="title reveal">Ce pour quoi<br />on se bat.</h2>
+        <div class="cards">
+          <article class="card tilt reveal">
+            <span class="card__num">01</span>
+            <h3>Salaires</h3>
+            <p>Indexation sur l'inflation, SMIC à la hausse, fin des écarts femmes-hommes. Le travail doit payer.</p>
+          </article>
+          <article class="card tilt reveal">
+            <span class="card__num">02</span>
+            <h3>Emploi industriel</h3>
+            <p>Le bassin annonéen a une histoire ouvrière forte. On défend chaque emploi, chaque savoir-faire, chaque site.</p>
+          </article>
+          <article class="card tilt reveal">
+            <span class="card__num">03</span>
+            <h3>Services publics</h3>
+            <p>Hôpital, école, Poste, transports : des services publics proches et accessibles pour tout le territoire.</p>
+          </article>
+          <article class="card tilt reveal">
+            <span class="card__num">04</span>
+            <h3>Santé au travail</h3>
+            <p>Cadences, risques psychosociaux, accidents : personne ne doit perdre sa santé à la gagner.</p>
+          </article>
+          <article class="card tilt reveal">
+            <span class="card__num">05</span>
+            <h3>Retraites</h3>
+            <p>Partir en bonne santé, avec une pension digne. Le travail d'une vie mérite mieux qu'un recul permanent.</p>
+          </article>
+          <article class="card tilt reveal">
+            <span class="card__num">06</span>
+            <h3>Égalité</h3>
+            <p>À travail égal, salaire égal. Contre toutes les discriminations, au boulot comme ailleurs.</p>
+          </article>
+        </div>
+        <div class="pin__bar" aria-hidden="true"><span></span></div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ACTUS -->
+    <section class="section" id="actus">
+      <div class="container">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow reveal">Actualités</p>
+            <h2 class="title reveal">Ça bouge<br />à Annonay.</h2>
+          </div>
+          <div class="filters reveal" role="tablist" aria-label="Filtrer les actualités">
+            <button class="chip is-active" data-filter="all">Tout</button>
+            <button class="chip" data-filter="lutte">Luttes</button>
+            <button class="chip" data-filter="droits">Droits</button>
+            <button class="chip" data-filter="vie">Vie de l'UL</button>
+          </div>
+        </div>
+        <div class="news" id="news"></div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="section section--red section--tight" id="photos">
+      <div class="container">
+        <div class="head-row">
+          <div>
+            <p class="eyebrow reveal">En images</p>
+            <h2 class="title reveal">Sur le<br />terrain.</h2>
+          </div>
+          <a class="btn btn--ghost magnetic reveal" href="https://www.facebook.com/share/1Fm3s28rZK/" target="_blank" rel="noopener"><span>Suivre l'UL sur Facebook</span><i>↗</i></a>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo agrandie" hidden>
+        <button class="lightbox__close" aria-label="Fermer">×</button>
+        <button class="lightbox__nav lightbox__prev" aria-label="Photo précédente">‹</button>
+        <figure><img alt="" /><figcaption></figcaption></figure>
+        <button class="lightbox__nav lightbox__next" aria-label="Photo suivante">›</button>
+      </div>
+    </section>
+
+    <!-- AGENDA -->
+    <section class="section section--dark" id="agenda">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow reveal">Agenda</p>
+          <h2 class="title reveal">On se<br />retrouve où&nbsp;?</h2>
+          <div class="countdown reveal" id="countdown" aria-live="polite"></div>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- DROITS -->
+    <section class="section" id="droits">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow reveal">Tes droits</p>
+          <h2 class="title reveal">Un souci<br /><em>au boulot</em>&nbsp;?</h2>
+          <p class="reveal">Licenciement, heures sup non payées, harcèlement, rupture conventionnelle, arrêt maladie… Nos conseiller·es te reçoivent gratuitement et en toute confidentialité.</p>
+          <div class="perm reveal">
+            <span class="pulse"></span>
+            <div>
+              <b>Permanence juridique</b>
+              <span id="perm-status">Mardi 14h – 17h, sans rendez-vous</span>
+            </div>
+          </div>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Mon employeur veut me licencier, que faire ?</summary>
+            <p>Ne signe rien dans la précipitation. Tu as le droit d'être assisté·e lors de l'entretien préalable par un·e conseiller·e du salarié. Viens nous voir dès la convocation.</p>
+          </details>
+          <details>
+            <summary>Mes heures supplémentaires ne sont pas payées.</summary>
+            <p>Note tes horaires chaque jour, garde tes plannings et messages. Tu peux réclamer jusqu'à 3 ans de salaires impayés. On t'aide à monter le dossier.</p>
+          </details>
+          <details>
+            <summary>Je subis de la pression ou du harcèlement.</summary>
+            <p>Ce n'est pas normal et tu n'es pas seul·e. Garde des traces écrites, parle-en au médecin du travail et contacte-nous. L'employeur a une obligation de protéger ta santé.</p>
+          </details>
+          <details>
+            <summary>Je suis dans une petite entreprise sans syndicat.</summary>
+            <p>L'UL est faite pour toi. Tu peux adhérer directement et bénéficier de l'accompagnement. On peut aussi t'aider à monter une section syndicale.</p>
+          </details>
+          <details>
+            <summary>Ma démarche est-elle confidentielle ?</summary>
+            <p>Oui, totalement. Ton employeur n'est jamais informé de ta venue ni de ton adhésion.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADHÉRER -->
+    <section class="section section--red" id="adherer">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow reveal">Adhérer</p>
+          <h2 class="title reveal">Combien ça<br />coûte <em>vraiment</em>&nbsp;?</h2>
+          <p class="reveal">La cotisation CGT est fixée à 1 % du salaire net. Et 66 % de ta cotisation est déduite de tes impôts (ou remboursée si tu n'es pas imposable).</p>
+        </div>
+        <div class="sim reveal">
+          <label for="salaire">Ton salaire net mensuel</label>
+          <div class="sim__value"><output id="salaire-out">1 800</output> €</div>
+          <input type="range" id="salaire" min="600" max="5000" step="50" value="1800" />
+          <div class="sim__res">
+            <div><span>Cotisation mensuelle</span><b id="cot">18,00 €</b></div>
+            <div class="hl"><span>Coût réel après crédit d'impôt</span><b id="reel">6,12 €</b></div>
+          </div>
+          <p class="sim__note">Soit environ <b id="jour">0,20 €</b> par jour. Moins qu'un café.</p>
+          <a href="#contact" class="btn magnetic" data-subject="Adhésion"><span>Je rejoins la CGT</span><i>→</i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="title reveal">Viens nous<br />voir.</h2>
+          <ul class="infos reveal">
+            <li><b>Adresse</b><span>Union Locale CGT — Annonay (07100)<br /><small>[adresse à compléter]</small></span></li>
+            <li><b>Téléphone</b><span>[à compléter]</span></li>
+            <li><b>Email</b><span>[à compléter]</span></li>
+            <li><b>Secrétaire général</b><span>Raphaël Foïs</span></li>
+            <li><b>Facebook</b><span><a href="https://www.facebook.com/share/1Fm3s28rZK/" target="_blank" rel="noopener">Page de l'UL CGT Annonay ↗</a></span></li>
+            <li><b>Permanences</b><span>Mardi 14h–17h · Jeudi 9h–12h</span></li>
+          </ul>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <div class="field">
+            <input id="f-nom" name="nom" required placeholder=" " autocomplete="name" />
+            <label for="f-nom">Nom & prénom</label>
+          </div>
+          <div class="field">
+            <input id="f-mail" name="email" type="email" required placeholder=" " autocomplete="email" />
+            <label for="f-mail">Email</label>
+          </div>
+          <div class="field">
+            <input id="f-ent" name="entreprise" placeholder=" " />
+            <label for="f-ent">Entreprise / secteur (facultatif)</label>
+          </div>
+          <div class="field">
+            <select id="f-obj" name="objet" required>
+              <option value="Question sur mes droits">Question sur mes droits</option>
+              <option value="Adhésion">Je veux adhérer</option>
+              <option value="Créer une section">Créer une section syndicale</option>
+              <option value="Autre">Autre</option>
+            </select>
+            <label for="f-obj" class="is-static">Objet</label>
+          </div>
+          <div class="field">
+            <textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea>
+            <label for="f-msg">Ton message</label>
+          </div>
+          <button class="btn magnetic" type="submit"><span>Envoyer</span><i>→</i></button>
+          <p class="form__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">TOUS ENSEMBLE</div>
+    <div class="container footer__row">
+      <span>© <span id="year"></span> Union Locale CGT Annonay</span>
+      <span>Confédération Générale du Travail · Ardèche</span>
+      <a href="#top">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
